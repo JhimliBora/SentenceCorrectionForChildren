@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4676D91A7F0F4E0044D703 /* ImgKids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E4676D81A7F0F4E0044D703 /* ImgKids.jpg */; };
+		4E4676DB1A7F16140044D703 /* ImgButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4676DA1A7F16140044D703 /* ImgButton1.png */; };
+		4E4676DD1A810F350044D703 /* ImgCongratulations.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E4676DC1A810F350044D703 /* ImgCongratulations.jpg */; };
+		4E4676E31A8114520044D703 /* ImgStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4676E21A8114520044D703 /* ImgStart.png */; };
+		4E4676E51A8114EA0044D703 /* ImgSad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4676E41A8114EA0044D703 /* ImgSad.png */; };
+		4E4676E71A8259520044D703 /* CorrectionTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4676E61A8259520044D703 /* CorrectionTipViewController.swift */; };
 		4EC840281A76791800A7E61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC840271A76791800A7E61E /* AppDelegate.swift */; };
 		4EC8402A1A76791800A7E61E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC840291A76791800A7E61E /* ViewController.swift */; };
 		4EC8402D1A76791800A7E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8402B1A76791800A7E61E /* Main.storyboard */; };
 		4EC8402F1A76791800A7E61E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8402E1A76791800A7E61E /* Images.xcassets */; };
 		4EC840321A76791800A7E61E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EC840301A76791800A7E61E /* LaunchScreen.xib */; };
 		4EC8403E1A76791800A7E61E /* SentenceCorrectionForChildrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8403D1A76791800A7E61E /* SentenceCorrectionForChildrenTests.swift */; };
+		4EDF21741A83A41700E3115C /* MenuListRepository.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF21731A83A41700E3115C /* MenuListRepository.plist */; };
+		4EDF21781A83A78E00E3115C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF21771A83A78E00E3115C /* MenuViewController.swift */; };
+		4EF2B6881A77B8FE00C380A9 /* SentenceListRepository.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2B6871A77B8FE00C380A9 /* SentenceListRepository.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E4676D81A7F0F4E0044D703 /* ImgKids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ImgKids.jpg; path = ../ImgKids.jpg; sourceTree = "<group>"; };
+		4E4676DA1A7F16140044D703 /* ImgButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImgButton1.png; sourceTree = SOURCE_ROOT; };
+		4E4676DC1A810F350044D703 /* ImgCongratulations.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImgCongratulations.jpg; sourceTree = SOURCE_ROOT; };
+		4E4676E21A8114520044D703 /* ImgStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImgStart.png; sourceTree = SOURCE_ROOT; };
+		4E4676E41A8114EA0044D703 /* ImgSad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImgSad.png; sourceTree = SOURCE_ROOT; };
+		4E4676E61A8259520044D703 /* CorrectionTipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectionTipViewController.swift; sourceTree = "<group>"; };
 		4EC840221A76791800A7E61E /* SentenceCorrectionForChildren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentenceCorrectionForChildren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC840261A76791800A7E61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC840271A76791800A7E61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +51,9 @@
 		4EC840371A76791800A7E61E /* SentenceCorrectionForChildrenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentenceCorrectionForChildrenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC8403C1A76791800A7E61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC8403D1A76791800A7E61E /* SentenceCorrectionForChildrenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCorrectionForChildrenTests.swift; sourceTree = "<group>"; };
+		4EDF21731A83A41700E3115C /* MenuListRepository.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuListRepository.plist; sourceTree = "<group>"; };
+		4EDF21771A83A78E00E3115C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4EF2B6871A77B8FE00C380A9 /* SentenceListRepository.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SentenceListRepository.plist; path = ../SentenceListRepository.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +95,11 @@
 		4EC840241A76791800A7E61E /* SentenceCorrectionForChildren */ = {
 			isa = PBXGroup;
 			children = (
+				4EDF21771A83A78E00E3115C /* MenuViewController.swift */,
 				4EC840271A76791800A7E61E /* AppDelegate.swift */,
 				4EC840291A76791800A7E61E /* ViewController.swift */,
 				4EC8402B1A76791800A7E61E /* Main.storyboard */,
+				4E4676E61A8259520044D703 /* CorrectionTipViewController.swift */,
 				4EC8402E1A76791800A7E61E /* Images.xcassets */,
 				4EC840301A76791800A7E61E /* LaunchScreen.xib */,
 				4EC840251A76791800A7E61E /* Supporting Files */,
@@ -90,7 +110,14 @@
 		4EC840251A76791800A7E61E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E4676E41A8114EA0044D703 /* ImgSad.png */,
+				4E4676E21A8114520044D703 /* ImgStart.png */,
+				4E4676DC1A810F350044D703 /* ImgCongratulations.jpg */,
+				4E4676DA1A7F16140044D703 /* ImgButton1.png */,
+				4E4676D81A7F0F4E0044D703 /* ImgKids.jpg */,
+				4EF2B6871A77B8FE00C380A9 /* SentenceListRepository.plist */,
 				4EC840261A76791800A7E61E /* Info.plist */,
+				4EDF21731A83A41700E3115C /* MenuListRepository.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,9 +219,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4676E51A8114EA0044D703 /* ImgSad.png in Resources */,
 				4EC8402D1A76791800A7E61E /* Main.storyboard in Resources */,
+				4E4676DD1A810F350044D703 /* ImgCongratulations.jpg in Resources */,
+				4E4676E31A8114520044D703 /* ImgStart.png in Resources */,
+				4E4676DB1A7F16140044D703 /* ImgButton1.png in Resources */,
+				4EDF21741A83A41700E3115C /* MenuListRepository.plist in Resources */,
+				4E4676D91A7F0F4E0044D703 /* ImgKids.jpg in Resources */,
 				4EC840321A76791800A7E61E /* LaunchScreen.xib in Resources */,
 				4EC8402F1A76791800A7E61E /* Images.xcassets in Resources */,
+				4EF2B6881A77B8FE00C380A9 /* SentenceListRepository.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +248,8 @@
 			files = (
 				4EC8402A1A76791800A7E61E /* ViewController.swift in Sources */,
 				4EC840281A76791800A7E61E /* AppDelegate.swift in Sources */,
+				4E4676E71A8259520044D703 /* CorrectionTipViewController.swift in Sources */,
+				4EDF21781A83A78E00E3115C /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +441,7 @@
 				4EC840431A76791800A7E61E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC840441A76791800A7E61E /* Build configuration list for PBXNativeTarget "SentenceCorrectionForChildrenTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +450,7 @@
 				4EC840461A76791800A7E61E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

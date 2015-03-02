@@ -7,19 +7,246 @@
 //
 
 import UIKit
+//import "CorrectionTipViewController.swift"
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextViewDelegate {
+    @IBOutlet var SentenceTextView: UITextView!
+    @IBOutlet var TotalMistakesTextField: UITextField!
+    @IBOutlet var MessageLabel: UILabel!
+    @IBOutlet var ImageKids: UIImageView!
+    @IBOutlet var SentenceNumberTextField: UITextField!
+    @IBOutlet var ResetButton:UIButton!
+    @IBOutlet var NextButton:UIButton!
+    @IBOutlet var TotalSentencesTextField: UITextField!
+    @IBOutlet var ImageCongratulations: UIImageView!
+    @IBOutlet var SentenceSetNumber: UITextField!
+    
+    var correctSentenceVariable=""
+    var sentenceSetVariable=""
+    
+ 
+    var TipMessageText=""
+   
+    @IBAction func doneToMenuViewController(segue:UIStoryboardSegue)
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    @IBAction func ResetButtonClicked(sender:AnyObject)
+    {
+         LoadSentence(SentenceNumberTextField.text.toInt()!-1)
+    }
+    
+    @IBAction func NextButtonClickled(sender:AnyObject)
+        
+    {
+       
+          LoadSentence(SentenceNumberTextField.text.toInt()!)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        SentenceTextView.delegate = self
+        InitializeData()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
+    
+    
+    func InitializeData()
+    {
+        let fileURL = NSBundle.mainBundle().URLForResource("ImgKids", withExtension: "jpg")
+        let beginImage = CIImage(contentsOfURL: fileURL)
+        let newImage = UIImage(CIImage: beginImage)
+        ImageKids.image = newImage
+        
+        correctSentenceVariable = ""
+        TotalMistakesTextField.text = "0"
+        SentenceTextView.text = ""
+        MessageLabel.text = "Set Not Found!!!"
+        SentenceNumberTextField.text = ""
+        TotalSentencesTextField.text=""
+        SentenceSetNumber.text=sentenceSetVariable
+        
+        SentenceNumberTextField.font=UIFont.boldSystemFontOfSize(14)
+        TotalSentencesTextField.font=UIFont.boldSystemFontOfSize(14)
+        
+        LoadSentence(0)
+        //NextButton.setTitle("here", forState: UIControlState.Normal)
+        
+        
+    }
+    
+    func LoadSentence(var SentenceNumber:Int)
+    {
+        
+        let path = NSBundle.mainBundle().pathForResource("SentenceListRepository", ofType: "plist")
+        let dict:AnyObject = NSDictionary(contentsOfFile: path!)!
+        
+        
+        var dictName = "Set"+" "+"\(SentenceSetNumber.text)"
+        
+        
+        if ( dict.objectForKey(dictName) != nil )
+        {
+            SentenceNumberTextField.text = "\(SentenceNumber+1)"
+            
+            let SentenceDict1:AnyObject = dict.objectForKey(dictName)!
+            TotalSentencesTextField.text = "\(SentenceDict1.count)"
+            var dictName1 = "Sentence"+" "+"\(SentenceNumber)"
+            let SentenceDict:AnyObject = SentenceDict1.objectForKey(dictName1)!
+
+       
+            if ( SentenceDict.objectForKey("IncorrectCount") != nil )
+            {
+              TotalMistakesTextField.text = SentenceDict.objectForKey("IncorrectCount") as String
+            }
+        
+            if ( SentenceDict.objectForKey("Incorrect") != nil )
+            {
+              SentenceTextView.text = SentenceDict.objectForKey("Incorrect") as String
+            }
+        
+            if ( SentenceDict.objectForKey("correct") != nil )
+            {
+              correctSentenceVariable = SentenceDict.objectForKey("correct") as String
+            }
+        
+            if ( SentenceDict.objectForKey("tip") != nil )
+            {
+              TipMessageText = SentenceDict.objectForKey("tip") as String
+            }
+
+            MessageLabel.text = "NOTE: Correct the above sentence.Total Mistakes must be 0 for a correct sentence."
+
+      }
+       /* else
+        {
+            SentenceNumberTextField.text=""
+            TotalSentencesTextField.text=""
+            
+            TotalMistakesTextField.text = "0"
+             SentenceTextView.text = ""
+             correctSentenceVariable = ""
+             TipMessageText = "-"
+             MessageLabel.text = "Set Not Found!!!"
+        }*/
+      
+        
+        NextButton.enabled=false
+        ResetButton.enabled=false
+       
+        
+        let fileURL = NSBundle.mainBundle().URLForResource("ImgStart", withExtension: "png")
+        let beginImage = CIImage(contentsOfURL: fileURL)
+        let newImage = UIImage(CIImage: beginImage)
+        ImageCongratulations.image = newImage
+        
+        
+    }
+    
+    func textView(SentenceTextView: UITextView!, shouldChangeTextInRange: NSRange, replacementText: NSString!) {
+        if(replacementText == "\n") {
+            SentenceTextView.resignFirstResponder()
+        }
+    }
+
+    func textViewDidEndEditing(textView: UITextView)
+    {
+        var a : Int
+        a=compareSentences()
+        TotalMistakesTextField.text = "\(a)"
+        
+        if TotalMistakesTextField.text.toInt()>0
+        {
+            if TotalMistakesTextField.text.toInt()>5
+            {
+                MessageLabel.text = "hmmm!!! too many mistakes buddy. Please click on Reset Button above and try again."
+                
+                NextButton.enabled=false
+                ResetButton.enabled=true
+                let fileURL = NSBundle.mainBundle().URLForResource("ImgSad", withExtension: "png")
+                let beginImage = CIImage(contentsOfURL: fileURL)
+                let newImage = UIImage(CIImage: beginImage)
+                ImageCongratulations.image = newImage
+                
+            }
+            else
+            {
+                MessageLabel.text = "NOTE: Correct the above sentence.Total Mistakes must be 0 for a correct sentence."
+                
+                NextButton.enabled=false
+                ResetButton.enabled=true
+            }
+        }
+        else
+        {
+            MessageLabel.text = "Congratulations!!! You did it. Well Done.Now go to the Next Sentence."
+
+            if ( SentenceNumberTextField.text.toInt()! + 1 != TotalSentencesTextField.text.toInt())
+            {
+              NextButton.enabled=true
+            }
+                
+               
+            ResetButton.enabled=false
+            
+            let fileURL = NSBundle.mainBundle().URLForResource("ImgCongratulations", withExtension: "jpg")
+            let beginImage = CIImage(contentsOfURL: fileURL)
+            let newImage = UIImage(CIImage: beginImage)
+            ImageCongratulations.image = newImage
+            
+            
+            
+        }
+    }
+    
+    func compareSentences()->Int
+    {
+        var i:Int=0
+        var IncorrectCount:Int=0
+    
+        
+         for i=0; i<countElements(correctSentenceVariable);++i
+         {
+           
+            let index = advance(correctSentenceVariable.startIndex, i)
+            let index2 = advance(SentenceTextView.text.startIndex, i)
+            
+            println(index)
+            println(index2)
+            println(correctSentenceVariable[index])
+            println(SentenceTextView.text[index2])
+           
+            if correctSentenceVariable[index] !=  SentenceTextView.text[index2]
+            {
+               ++IncorrectCount
+             }
+          }
+       
+          return IncorrectCount
+    
+       }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "CorrectionTipViewControllerSegue"
+        {
+            if let destinationVC = segue.destinationViewController as? CorrectionTipViewController
+            {
+                destinationVC.TipMessage = TipMessageText
+                //No errors while passing to a variable instead of a IBOutlet
+            }
+        }
+
+
+     }
 
 
 }
-
