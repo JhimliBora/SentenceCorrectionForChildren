@@ -2,113 +2,329 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Set 1</key>
+	<key>Easy</key>
 	<dict>
-	<key>Sentence 0</key>
-	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>2</string>
-		<key>correct</key>
-		<string>Once upon a time there was an old woman who loved baking gingerbread. She would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
-		<key>Incorrect</key>
-		<string>once upon a time there was an old woman who loved baking gingerbread. she would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
-		<key>category</key>
-		<string>easy</string>
+		<key>Sentence 0</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Once upon a time there was an old woman who loved baking gingerbread. She would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>Incorrect</key>
+			<string>once upon a time there was an old woman who loved baking gingerbread. she would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>easy</string>
+		</dict>
+		<key>Sentence 1</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The little gingerbread man was confused. He knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. Will you keep me safe and not eat me?&quot;</string>
+			<key>Incorrect</key>
+			<string>the little gingerbread man was confused. he knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. will you keep me safe and not eat me&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>easy</string>
+		</dict>
+		<key>Sentence 2</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>This is an elephant. They are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>Incorrect</key>
+			<string>this is an elephant. they are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing period mark (.) in 2nd sentence.</string>
+			<key>category</key>
+			<string>easy</string>
+		</dict>
+		<key>Sentence 3</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Little Miss Mary was a chip off the block. If she could shop, she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>Incorrect</key>
+			<string>little miss mary was a chip off the block. If she could shop she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 4</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>Little Miss Mary made her Daddy proud. By jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From Moscow to Paris, from Harrods to Macy&apos;s.</string>
+			<key>Incorrect</key>
+			<string>Little Miss mary made her daddy proud. by jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From moscow to paris, from Harrods to Macy&apos;s.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 5</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. Along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>Incorrect</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>tough</string>
+		</dict>
+		<key>Sentence 6</key>
+		<dict>
+			<key>Set</key>
+			<string>1</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>Incorrect</key>
+			<string>the beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
 	</dict>
-	<key>Sentence 1</key>
+	<key>Medium</key>
 	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>3</string>
-		<key>correct</key>
-		<string>The little gingerbread man was confused. He knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. Will you keep me safe and not eat me?&quot;</string>
-		<key>Incorrect</key>
-		<string>the little gingerbread man was confused. he knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. will you keep me safe and not eat me&quot;</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
-		<key>category</key>
-		<string>easy</string>
+		<key>Sentence 0</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Once upon a time there was an old woman who loved baking gingerbread. She would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>Incorrect</key>
+			<string>once upon a time there was an old woman who loved baking gingerbread. she would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 1</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The little gingerbread man was confused. He knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. Will you keep me safe and not eat me?&quot;</string>
+			<key>Incorrect</key>
+			<string>the little gingerbread man was confused. he knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. will you keep me safe and not eat me&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 2</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>This is an elephant. They are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>Incorrect</key>
+			<string>this is an elephant. they are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing period mark (.) in 2nd sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 3</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Little Miss Mary was a chip off the block. If she could shop, she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>Incorrect</key>
+			<string>little miss mary was a chip off the block. If she could shop she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 4</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>Little Miss Mary made her Daddy proud. By jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From Moscow to Paris, from Harrods to Macy&apos;s.</string>
+			<key>Incorrect</key>
+			<string>Little Miss mary made her daddy proud. by jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From moscow to paris, from Harrods to Macy&apos;s.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 5</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. Along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>Incorrect</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 6</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>Incorrect</key>
+			<string>the beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
 	</dict>
-	<key>Sentence 2</key>
+	<key>Advance</key>
 	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>3</string>
-		<key>correct</key>
-		<string>This is an elephant. They are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
-		<key>Incorrect</key>
-		<string>this is an elephant. they are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing period mark (.) in 2nd sentence.</string>
-		<key>category</key>
-		<string>easy</string>
+		<key>Sentence 0</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Once upon a time there was an old woman who loved baking gingerbread. She would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>Incorrect</key>
+			<string>once upon a time there was an old woman who loved baking gingerbread. she would bake gingerbread cookies, cakes, houses and gingerbread people, all decorated with chocolate and peppermint, caramel candies and colored frosting.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 1</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The little gingerbread man was confused. He knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. Will you keep me safe and not eat me?&quot;</string>
+			<key>Incorrect</key>
+			<string>the little gingerbread man was confused. he knew that his butterfly friend had good intentions but could she really carry him? He doubted it. Her wings were so thin and delicate. The thought of him falling into the cold water and crumbling to damp bits was frightening. He said to the fox, &quot;I outran children. I outran a horse, and I outran a dog. will you keep me safe and not eat me&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 2</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>This is an elephant. They are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>Incorrect</key>
+			<string>this is an elephant. they are very big animals and have a long memory, and a very long nose called a trunk. They make a trumpet sound.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing period mark (.) in 2nd sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 3</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string>Little Miss Mary was a chip off the block. If she could shop, she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>Incorrect</key>
+			<string>little miss mary was a chip off the block. If she could shop she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 4</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>Little Miss Mary made her Daddy proud. By jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From Moscow to Paris, from Harrods to Macy&apos;s.</string>
+			<key>Incorrect</key>
+			<string>Little Miss mary made her daddy proud. by jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From moscow to paris, from Harrods to Macy&apos;s.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 5</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>2</string>
+			<key>correct</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. Along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>Incorrect</key>
+			<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
+		<key>Sentence 6</key>
+		<dict>
+			<key>Set</key>
+			<string>2</string>
+			<key>IncorrectCount</key>
+			<string>3</string>
+			<key>correct</key>
+			<string>The beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>Incorrect</key>
+			<string>the beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
+			<key>tip</key>
+			<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
+			<key>category</key>
+			<string>medium</string>
+		</dict>
 	</dict>
-	<key>Sentence 3</key>
-	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>2</string>
-		<key>correct</key>
-		<string>Little Miss Mary was a chip off the block. If she could shop, she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
-		<key>Incorrect</key>
-		<string>little miss mary was a chip off the block. If she could shop she would shop and right round the clock!Three-sixty a year and twenty-four-seven, Impressive for someone who just turned eleven.</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
-		<key>category</key>
-		<string>medium</string>
-	</dict>
-	<key>Sentence 4</key>
-	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>3</string>
-		<key>correct</key>
-		<string>Little Miss Mary made her Daddy proud. By jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From Moscow to Paris, from Harrods to Macy&apos;s.</string>
-		<key>Incorrect</key>
-		<string>Little Miss mary made her daddy proud. by jumping in queues and by pushing through crowds, by spending his money in all sorts of places. From moscow to paris, from Harrods to Macy&apos;s.</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
-		<key>category</key>
-		<string>medium</string>
-	</dict>
-	<key>Sentence 5</key>
-	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>2</string>
-		<key>correct</key>
-		<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. Along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
-		<key>Incorrect</key>
-		<string> &quot;It&apos;s coming well,&quot; said Monsieur l&apos;Abbaye, again from behind the curtain. along with his words came the strange sounds of swooshing, clanking and slapping. &quot;You know you&apos;re fortunate it&apos;s I painting your portrait. Only buon fresco will do. It&apos;s four coats of lime plaster. First layer the trullisatio, followed by the arriccio, then the anenato and finally the intonaco not to mention the part where I draw. But it&apos;s the best plaster process I ever saw. Senior Bartoli, it will last forever, but alas, it&apos;s a time-consuming endeavor.&quot;</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st and 2nd sentences.</string>
-		<key>category</key>
-		<string>tough</string>
-	</dict>
-	<key>Sentence 6</key>
-	<dict>
-		<key>Set</key>
-		<string>1</string>
-		<key>IncorrectCount</key>
-		<string>3</string>
-		<key>correct</key>
-		<string>The beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
-		<key>Incorrect</key>
-		<string>the beaver colony was neither large nor small, having three families and ten members, and like all beaver they worked very hard to dam the small river. Although the beavers took occasional breaks, usually for not more than half an hour, one beaver relished sitting at the water&apos;s edge deep in thought. He worked harder and faster just so he could sit still longer. If they kept busy with the who and what of things, he found value in the if and why of things -- for hours at a time.</string>
-		<key>tip</key>
-		<string>First character of the first word should be upperCase in both 1st, 2nd and last sentences. Missing question mark (?) in last sentence.</string>
-		<key>category</key>
-		<string>medium</string>
-	</dict>
-    </dict>
 </dict>
 </plist>

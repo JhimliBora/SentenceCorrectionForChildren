@@ -18,18 +18,20 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     var textMesseges = [String]()
     var totalItems:Int  = 0
     var SelectedRowNumber:Int=0
+    var valueToPass:String!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         getMenuListData()
+        tableView.tableFooterView = UIView(frame: CGRectZero)
         
     }
 
     func getMenuListData()
     {
         
-        let path = NSBundle.mainBundle().pathForResource("MenuListRepository", ofType: "plist")
+       /* let path = NSBundle.mainBundle().pathForResource("MenuListRepository", ofType: "plist")
         let dict:AnyObject = NSDictionary(contentsOfFile: path!)!
         var dictName="Batches"
         let MenuDict:AnyObject = dict.objectForKey(dictName)!
@@ -39,16 +41,22 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
         if ( MenuDict.objectForKey("Easy") != nil )
         {
            
-           jCount = MenuDict.objectForKey("Easy") as Int
+           jCount = MenuDict.objectForKey("Easy") as! Int
 
         }
         
-        var iCount:Int = 0
+      /*  var iCount:Int = 0
         for iCount=0; iCount<jCount ;++iCount
         {
             textMesseges.append("Sentence Set - " + "\(iCount+1)")
-        }
-         
+        }*/
+        */
+        textMesseges.append("Easy" )
+        textMesseges.append("Medium" )
+        textMesseges.append("Advance" )
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,13 +70,14 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     {
         if segue.identifier == "SentenceCorrectionViewControllerSegue"
         {
-            let SentenceCorrection = segue.destinationViewController as  ViewController
+            let SentenceCorrection = segue.destinationViewController as!  ViewController
             
             if let blogIndex = tableView.indexPathForSelectedRow()?.row
                {
                
-                  SentenceCorrection.sentenceSetVariable = "\(blogIndex + 1)"
-
+                 // SentenceCorrection.sentenceSetVariable = "\(blogIndex + 1)"
+                SentenceCorrection.sentenceSetVariable = valueToPass
+               // println(SentenceCorrection.sentenceSetVariable)
                  // NSLog("did select and the text is \(blogIndex)")
                 }
             else
@@ -107,14 +116,12 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        self.performSegueWithIdentifier("SentenceCorrectionViewControllerSegue", sender: tableView)
-       // let cell = tableView.cellForRowAtIndexPath(indexPath)
-        //let str = cell?.textLabel?.text
-      
-     
-        //NSLog("did select and the text is \(str)")
-        //SelectedRowNumber=2
+        let indexPath = tableView.indexPathForSelectedRow();
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!;
         
+        valueToPass = currentCell.textLabel!.text
+        self.performSegueWithIdentifier("SentenceCorrectionViewControllerSegue", sender: tableView)
+               
     }
     
     }

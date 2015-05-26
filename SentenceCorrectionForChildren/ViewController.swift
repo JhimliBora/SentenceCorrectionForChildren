@@ -90,7 +90,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         let dict:AnyObject = NSDictionary(contentsOfFile: path!)!
         
         
-        var dictName = "Set"+" "+"\(SentenceSetNumber.text)"
+        //var dictName = "Set"+" "+"\(SentenceSetNumber.text)"
+        var dictName = SentenceSetNumber.text
         
         
         if ( dict.objectForKey(dictName) != nil )
@@ -105,22 +106,22 @@ class ViewController: UIViewController, UITextViewDelegate {
        
             if ( SentenceDict.objectForKey("IncorrectCount") != nil )
             {
-              TotalMistakesTextField.text = SentenceDict.objectForKey("IncorrectCount") as String
+              TotalMistakesTextField.text = SentenceDict.objectForKey("IncorrectCount") as! String
             }
         
             if ( SentenceDict.objectForKey("Incorrect") != nil )
             {
-              SentenceTextView.text = SentenceDict.objectForKey("Incorrect") as String
+              SentenceTextView.text = SentenceDict.objectForKey("Incorrect") as! String
             }
         
             if ( SentenceDict.objectForKey("correct") != nil )
             {
-              correctSentenceVariable = SentenceDict.objectForKey("correct") as String
+              correctSentenceVariable = SentenceDict.objectForKey("correct") as! String
             }
         
             if ( SentenceDict.objectForKey("tip") != nil )
             {
-              TipMessageText = SentenceDict.objectForKey("tip") as String
+              TipMessageText = SentenceDict.objectForKey("tip") as! String
             }
 
             MessageLabel.text = "NOTE: Correct the above sentence.Total Mistakes must be 0 for a correct sentence."
@@ -151,11 +152,18 @@ class ViewController: UIViewController, UITextViewDelegate {
         
     }
     
-    func textView(SentenceTextView: UITextView!, shouldChangeTextInRange: NSRange, replacementText: NSString!) {
-        if(replacementText == "\n") {
-            SentenceTextView.resignFirstResponder()
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText: String) -> Bool
+    {
+        
+        if(replacementText == "\n")
+        {
+            textView.resignFirstResponder()
+            return false
         }
+        return true
     }
+
 
     func textViewDidEndEditing(textView: UITextView)
     {
@@ -213,7 +221,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         var IncorrectCount:Int=0
     
         
-         for i=0; i<countElements(correctSentenceVariable);++i
+         for i=0; i<count(correctSentenceVariable);++i
          {
            
             let index = advance(correctSentenceVariable.startIndex, i)
