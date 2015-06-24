@@ -61,10 +61,10 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func InitializeData()
     {
-        let fileURL = NSBundle.mainBundle().URLForResource("ImgKids", withExtension: "jpg")
-        let beginImage = CIImage(contentsOfURL: fileURL)
-        let newImage = UIImage(CIImage: beginImage)
-        ImageKids.image = newImage
+        //let fileURL = NSBundle.mainBundle().URLForResource("ImgKids", withExtension: "jpg")
+        //let beginImage = CIImage(contentsOfURL: fileURL)
+        //let newImage = UIImage(CIImage: beginImage)
+       // ImageKids.image = newImage
         
         correctSentenceVariable = ""
         TotalMistakesTextField.text = "0"
@@ -125,6 +125,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             }
 
             MessageLabel.text = "NOTE: Correct the above sentence.Total Mistakes must be 0 for a correct sentence."
+            MessageLabel.textColor = UIColor.blackColor()
 
       }
        /* else
@@ -173,10 +174,10 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         if TotalMistakesTextField.text.toInt()>0
         {
-            if TotalMistakesTextField.text.toInt()>5
+            if TotalMistakesTextField.text.toInt()>10
             {
                 MessageLabel.text = "hmmm!!! too many mistakes buddy. Please click on Reset Button above and try again."
-                
+                MessageLabel.textColor = UIColor.blackColor()
                 NextButton.enabled=false
                 ResetButton.enabled=true
                 let fileURL = NSBundle.mainBundle().URLForResource("ImgSad", withExtension: "png")
@@ -188,18 +189,25 @@ class ViewController: UIViewController, UITextViewDelegate {
             else
             {
                 MessageLabel.text = "NOTE: Correct the above sentence.Total Mistakes must be 0 for a correct sentence."
-                
+                MessageLabel.textColor = UIColor.blackColor()
                 NextButton.enabled=false
                 ResetButton.enabled=true
             }
         }
         else
         {
-            MessageLabel.text = "Congratulations!!! You did it. Well Done.Now go to the Next Sentence."
+           
 
-            if ( SentenceNumberTextField.text.toInt()! + 1 != TotalSentencesTextField.text.toInt())
+            if ( SentenceNumberTextField.text.toInt()! + 1 <= TotalSentencesTextField.text.toInt())
             {
-              NextButton.enabled=true
+               MessageLabel.text = "Congratulations!!! You did it. Well Done.Now go to the Next Sentence."
+               MessageLabel.textColor = UIColor.redColor()
+               NextButton.enabled=true
+            }
+            else
+            {
+               MessageLabel.text = "Congratulations!!! Test Completes. Go back to Menu."
+               MessageLabel.textColor = UIColor.redColor()
             }
                 
                
